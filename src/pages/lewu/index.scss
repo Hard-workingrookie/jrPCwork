@@ -1,0 +1,869 @@
+div.lewu_banner_box {
+    width   : 100vw;
+    position: relative;
+
+    img.lewu_banner {
+        height: 6.5rem;
+        width : 100%;
+    }
+
+    ul.lewu_banner_icon_box {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        margin-top     : -0.8rem;
+
+        li.lewu_banner_icon_list {
+            width          : 2.83rem;
+            height         : 1.57rem;
+            background     : #FFFFFF;
+            box-shadow     : 0rem .02rem .1rem 0rem rgba(25, 26, 27, 0.2);
+            display        : flex;
+            flex-direction : column;
+            justify-content: center;
+            align-items    : center;
+            margin-right   : .17rem;
+
+            img.lewu_banner_icon {
+                width        : .49rem;
+                height       : .49rem;
+                margin-bottom: .17rem;
+            }
+
+            img.lewu_banner_icon:nth-child(2) {
+                width : .55rem;
+                height: .44rem;
+            }
+
+            img.lewu_banner_icon:nth-child(3) {
+                width : .43rem;
+                height: .45rem;
+            }
+
+            img.lewu_banner_icon:nth-child(4) {
+                width : .49rem;
+                height: .45rem;
+            }
+
+
+            span.lewu_banner_text {
+                font-size  : .22rem;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color      : #333333;
+                line-height: .31rem;
+                text-align : center;
+            }
+        }
+    }
+}
+
+
+div.high_end_customization {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    margin         : .70rem 0 .6rem 0;
+
+    img.high_end_customization_tit {
+        width : 5.07rem;
+        height: 1.25rem;
+    }
+
+    img.high_end_customization_img {
+        width : 12.01rem;
+        height: 5.85rem;
+        margin: .5rem 0 .6rem 0;
+    }
+
+    div.high_end_customization_btns {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+
+        img.high_end_customization_btn {
+            width : 4.86rem;
+            height: .78rem;
+            cursor: pointer;
+        }
+
+        img.high_end_customization_btn:first-child {
+            margin-right: .37rem;
+        }
+    }
+}
+
+
+
+div.four_life_style {
+    background-size: 100%;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    padding-bottom : .64rem;
+
+    img.four_life_style_tit {
+        width : 7.1rem;
+        height: .83rem;
+        margin: .64rem 0 .54rem 0;
+
+    }
+
+    div.four_life_style_list {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+
+        img.four_life_style_img {
+            width       : 2.9rem;
+            height      : 3.67rem;
+            margin-right: .14rem;
+        }
+
+        img.four_life_style_img:last-child {
+            margin-right: 0;
+        }
+    }
+
+    img.Ideal_life_img {
+        width : 12rem;
+        height: 1.27rem;
+        margin: .4rem 0 .56rem 0;
+    }
+
+    div.four_life_style_btns {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+
+        img.four_life_style_btn {
+            width       : 4.86rem;
+            height      : .78rem;
+            cursor      : pointer;
+            margin-right: .37rem;
+        }
+
+        img.four_life_style_btn:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+//高端建材
+div.high_end_building_materials {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    padding        : .62rem 0;
+
+    img.building_materials_title {
+        width        : 6.36rem;
+        height       : 1.2rem;
+        margin-bottom: .5rem;
+    }
+
+    img.building_materials_img {
+        width        : 11.92rem;
+        height       : 2.39rem;
+        margin-bottom: .06rem;
+    }
+
+    div.main_auxiliary_materials {
+        background-size: 100% 100%;
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        padding        : .36rem 1.86rem .34rem 1.56rem;
+
+        .main_auxiliary_materials_btns {
+            display        : flex;
+            justify-content: center;
+            padding-bottom : .4rem;
+
+            div.material {
+                position       : relative;
+                display        : flex;
+                justify-content: center;
+                align-items    : flex-start;
+
+                img.material_btn {
+                    width       : 5.94rem;
+                    margin-right: .1rem;
+                }
+
+                span.main_material_text {
+                    position   : absolute;
+                    margin-top : .20rem;
+                    font-size  : .3rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: 400;
+                    color      : #FFFFFF;
+                }
+            }
+        }
+
+
+        img.main_material_img {
+            width : 12.03rem;
+            height: 5.61rem;
+        }
+
+    }
+
+
+
+    div.building_materials_btns {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        margin-top     : .2rem;
+
+        img.building_materials_btn {
+            width       : 4.86rem;
+            height      : .78rem;
+            margin-right: .37rem;
+            cursor      : pointer;
+        }
+
+        img.building_materials_btn:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+div.engineering_system {
+    background-size: 100% 100%;
+    padding        : .5rem 0 .63rem 0;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+
+    img.engineering_system_title {
+        width : 6.34rem;
+        height: 1.27rem;
+    }
+
+    ul.engineering_system_list {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        margin         : .5rem 0 .1rem 0;
+        padding        : 0;
+
+        li.engineering_system_item {
+            width           : 3.96rem;
+            height          : .82rem;
+            background-color: #393939;
+            margin-right    : .08rem;
+            display         : flex;
+            align-items     : center;
+            justify-content : center;
+
+            img.engineering_system_item_icon {
+                width       : .4rem;
+                height      : .33rem;
+                margin-right: .06rem;
+            }
+
+            img.engineering_system_item_icon:nth-child(2) {
+                width : .32rem;
+                height: .34rem;
+            }
+
+            img.engineering_system_item_icon:last-child {
+                width : .3rem;
+                height: .36rem;
+            }
+
+            span.engineering_system_item_text {
+                font-size  : .2rem;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color      : #FFFFFF;
+                line-height: .36rem;
+
+                span {}
+            }
+        }
+
+        li.engineering_system_item:last-child {
+            margin-right: 0;
+        }
+    }
+
+    div.engineering_system_technology {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        height         : 4.99rem;
+
+        div.engineering_system_technology_left {
+            width : 7.8rem;
+            height: 100%;
+
+            img {
+                width : 7.8rem;
+                height: 100%;
+            }
+
+            .technology_numBox_carousel {
+                margin-top: -.79rem;
+
+                .engineering_technology_numBox {
+                    width          : 7.8rem;
+                    height         : .79rem;
+                    background     : #000000;
+                    opacity        : 0.65;
+                    font-size      : .2rem;
+                    font-family    : Source Han Sans CN;
+                    font-weight    : 400;
+                    color          : #FFFFFF;
+                    display        : flex !important;
+                    align-items    : center;
+                    padding        : 0 .24rem 0 .12rem;
+                    justify-content: space-between;
+                    z-index        : 11;
+
+                    .engineering_technology_info {
+                        margin-right : .2rem;
+                        text-overflow: ellipsis;
+                        overflow     : hidden;
+                        white-space  : nowrap;
+                    }
+
+                    .engineering_system_technology_curnum {
+                        font-size  : .28rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color      : #F4A712;
+                        line-height: .49rem;
+                        position   : absolute;
+                        margin-top : -.2rem;
+                        margin-left: -.2rem;
+                    }
+
+                    .engineering_system_technology_nums {
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color      : #FFFFFF;
+                        font-size  : .24rem;
+                        margin-top : .1rem;
+                    }
+                }
+            }
+
+        }
+
+        div.engineering_system_technology_right {
+            width         : 4.18rem;
+            height        : 100%;
+            background    : #333333;
+            display       : flex;
+            flex-direction: column;
+            padding       : .38rem 0 .18rem .35rem;
+
+            img.engineering_system_technology_icon {
+                width   : 2.46rem;
+                height  : .59rem;
+                position: relative;
+
+            }
+
+            img.engineering_system_technology_icon::after {
+                position        : absolute;
+                content         : '';
+                width           : .69rem;
+                height          : .04rem;
+                margin-top      : .18rem;
+                background-color: #666;
+            }
+
+
+            span.engineering_system_technology_title {
+                font-size  : .3rem;
+                font-family: Source Han Sans CN;
+                font-weight: bold;
+                color      : #FFFFFF;
+                line-height: .28rem;
+                margin     : .46rem 0 .36rem 0;
+            }
+
+            div.engineering_system_technology_imgs {
+                display        : flex;
+                flex-wrap      : wrap;
+                justify-content: center;
+                align-items    : center;
+
+                img.engineering_system_technology_img {
+                    width        : 1.1rem;
+                    height       : 1.1rem;
+                    border-radius: 50%;
+                    margin-right : .16rem;
+                    margin-bottom: .28rem;
+                    cursor       : pointer;
+                }
+
+                .technology_img_active {
+                    border: .03rem solid #F4A712;
+                }
+
+                img.engineering_system_technology_img:nth-child(3) {
+                    margin-right: 0;
+
+                }
+
+                img.engineering_system_technology_img:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    div.engineering_system_btns {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        margin-top     : .6rem;
+
+        img.engineering_system_btn {
+            width       : 4.86rem;
+            height      : .78rem;
+            margin-right: .37rem;
+            cursor      : pointer;
+        }
+
+        img.engineering_system_btn:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+
+//686巡检
+.on_site_inspection {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    padding        : .6rem 0;
+
+    img.on_site_inspection_title {
+        width          : 6.29rem;
+        height         : .85rem;
+        display        : flex;
+        justify-content: center;
+    }
+
+    ul.on_site_inspection_list {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+
+        li.on_site_inspection_item {
+            display        : flex;
+            flex-direction : column;
+            justify-content: center;
+            align-items    : center;
+
+            img.inspection_tour_img {
+                width : 4rem;
+                height: 2.3rem;
+            }
+
+            span.inspection_tour_title {
+                font-size  : .26rem;
+                font-family: Source Han Sans CN;
+                font-weight: 500;
+                color      : #333333;
+                line-height: .5rem;
+                position   : relative;
+                margin-top : .38rem;
+            }
+
+            .inspection_tour_line {
+                width           : 1.24rem;
+                height          : .04rem;
+                background-color: #4B4A4A;
+            }
+
+            span.inspection_tour_info {
+                font-size  : .22rem;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color      : #666666;
+                line-height: .36rem;
+                width      : 3.08rem;
+                margin-top : .26rem;
+
+            }
+
+            span.inspection_tour_info:nth-child(2) {
+                width        : 3.5rem;
+                margin-bottom: .32rem;
+            }
+        }
+    }
+
+
+
+    div.on_site_inspection_btns {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        margin-top     : .6rem;
+
+        img.on_site_inspection_btn {
+            width       : 4.86rem;
+            height      : .78rem;
+            margin-right: .37rem;
+            cursor      : pointer;
+
+        }
+
+        img.on_site_inspection_btn:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+
+
+//顶级设计师案例精选
+div.top_designer_cases {
+    background-size: 100% 100%;
+    padding        : .62rem 0 .69rem 0;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+
+    img.top_designer_cases_title {
+        width   : 6.59rem;
+        height  : .87rem;
+        position: relative;
+    }
+
+    img.top_more_desiger {
+        width     : 1.65rem;
+        height    : .42rem;
+        position  : absolute;
+        margin-top: -2.7rem;
+        right     : 2.8rem;
+    }
+
+    div.design_Carousel_box {
+        width          : 100%;
+        height         : auto;
+        margin-top     : .6rem;
+        display        : flex;
+        justify-content: center;
+        flex-direction : column;
+
+        div.swiper-container.gallery-top {
+            height         : 4.17rem;
+            width          : 12rem;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+            margin-left    : auto;
+            margin-right   : auto;
+
+            div.swiper-wrapper {
+                div.swiper-slide {
+                    display    : flex;
+                    align-items: center;
+
+                    .top_designer_caseImg {
+                        width : 8.51rem;
+                        height: 4.17rem;
+                    }
+
+                    div.top_designer_info {
+                        margin-top    : .55rem;
+                        display       : flex;
+                        flex-direction: column;
+                        width         : 3.5rem;
+                        height        : 3.62rem;
+                        background    : #3C3C3C;
+                        border        : .01rem solid #3C3C3C;
+                        padding       : .27rem .2rem .3rem .12rem;
+
+                        .top_designer_info_top {
+                            display: flex;
+
+                            img.top_designer_avator {
+                                width       : 1.68rem;
+                                height      : 1.13rem;
+                                margin-right: .15rem;
+                            }
+
+                            div.designer_avator_right_info {
+                                display        : flex;
+                                flex-direction : column;
+                                justify-content: center;
+
+                                span.top_designer_name {
+                                    font-size  : .24rem;
+                                    font-family: Source Han Sans CN;
+                                    font-weight: bold;
+                                    color      : #FFFFFF;
+                                }
+
+                                span.top_designer_title {
+                                    font-size  : .2rem;
+                                    font-family: Source Han Sans CN;
+                                    font-weight: 400;
+                                    color      : #FFFFFF;
+                                }
+
+                                span.top_designer_years {
+                                    font-size  : .18rem;
+                                    font-family: Source Han Sans CN;
+                                    font-weight: 400;
+                                    color      : #FFFFFF;
+                                    line-height: .28rem;
+
+                                    span {}
+                                }
+
+                                span.top_designer_works {
+                                    font-size  : .18rem;
+                                    font-family: Source Han Sans CN;
+                                    font-weight: 400;
+                                    color      : #FFFFFF;
+                                    line-height: .28rem;
+
+                                    span {}
+                                }
+                            }
+                        }
+
+                        .top_designer_info_bottom {
+                            display       : flex;
+                            flex-direction: column;
+
+                            p.top_designer_style_title {
+                                font-size  : .18rem;
+                                font-family: Source Han Sans CN;
+                                font-weight: 400;
+                                color      : #FFFFFF;
+                                line-height: .32rem;
+                                margin     : 0;
+                                margin-top : .22rem;
+                            }
+
+                            div.top_designer_styles {
+                                font-size  : .16rem;
+                                font-family: Source Han Sans CN;
+                                font-weight: 400;
+                                color      : #DAA25B;
+                                line-height: .32rem;
+                            }
+
+                            p.design_concept {
+                                font-size  : .18rem;
+                                font-family: Source Han Sans CN;
+                                font-weight: 400;
+                                color      : #FFFFFF;
+                                margin     : 0;
+                                line-height: .28rem;
+                            }
+
+                            p.design_concept_text {
+                                font-size  : .16rem;
+                                font-family: Source Han Sans CN;
+                                font-weight: 400;
+                                color      : #FFFFFF;
+                                line-height: .28rem;
+                                margin     : 0;
+                            }
+
+                            div.view_details_btn {
+                                width           : 1.12rem;
+                                height          : .36rem;
+                                display         : flex;
+                                justify-content : center;
+                                align-items     : center;
+                                background-color: #DAA25B;
+                                color           : #fff;
+                                font-size       : .16rem;
+                                margin-top      : .24rem;
+                                align-self      : flex-end;
+                            }
+                        }
+
+
+
+                    }
+                }
+            }
+
+
+        }
+
+        .design_Carousel_box_bottom {
+            display        : flex;
+            align-items    : center;
+            justify-content: center;
+            position       : relative;
+
+            img.swiper-button-prev.swiper-button-white {
+                width   : .45rem;
+                height  : .45rem;
+                cursor  : pointer;
+                left    : 1rem;
+                position: absolute;
+
+            }
+
+            img.swiper-button-next.swiper-button-white {
+                width   : .45rem;
+                height  : .45rem;
+                cursor  : pointer;
+                position: absolute;
+                right   : 1rem;
+            }
+
+            div.swiper-container.gallery-thumbs {
+                box-sizing : border-box;
+                display    : flex;
+                align-items: center;
+                padding-top: .22rem;
+                position   : relative;
+
+                div.swiper-wrapper {
+                    div.swiper-slide {
+                        border         : .03rem solid #999999;
+                        width          : 1.94rem !important;
+                        height         : 1.3rem;
+                        margin-right   : .2rem;
+                        cursor         : pointer;
+                        background-size: 100% 100%;
+                    }
+                }
+
+
+
+                .swiper-slide-thumb-active {
+                    border: .03rem solid #F4A712 !important;
+                }
+            }
+        }
+
+    }
+
+    div.top_designer_cases_btns {
+        display    : flex;
+        align-items: center;
+        margin-top : .58rem;
+
+        img.top_designer_cases_btn {
+            width       : 4.86rem;
+            margin-right: .37rem;
+            height      : .78rem;
+            cursor: pointer;
+        }
+
+        img.top_designer_cases_btn:last-child {
+            margin-right: 0;
+
+        }
+    }
+}
+
+
+
+
+//VIP 定制服务
+div.vip_custom_service {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    padding        : .58rem 0;
+
+    img.vip_custom_service_title {
+        width : 5.08rem;
+        height: 1.18rem;
+    }
+
+    div.vip_custom_service_imgs {
+        display    : flex;
+        align-items: center;
+        margin     : .48rem 0 .34rem 0;
+
+        img.vip_custom_service_img {
+            width       : 1.91rem;
+            height      : 1.92rem;
+            margin-right: .1rem;
+        }
+
+        img.vip_custom_service_img:last-child {
+            margin-right: 0;
+        }
+    }
+
+    div.Omnidirectional_measuring_room {
+        display        : flex;
+        justify-content: start;
+        align-items    : flex-end;
+        margin-bottom  : .08rem;
+        margin-left    : -7rem;
+
+        img.Omnidirectional_measuring_room_icon {
+            width : .55rem;
+            height: .49rem;
+        }
+
+        span.Omnidirectional_measuring_room_title {
+            font-size  : .28rem;
+            font-family: Lantinghei SC;
+            font-weight: 600;
+            color      : #4B4A4A;
+            line-height: .36rem;
+        }
+    }
+
+    div.Omnidirectional_measuring_room_form {
+        background-size: 100% 100%;
+        display        : flex;
+        align-items    : center;
+        padding        : .4rem .3rem .4rem .34rem;
+
+        input.measuring_room_form_input {
+            width       : 3.142rem;
+            height      : .62rem;
+            margin-right: .12rem;
+        }
+
+        div.one_key_reservation_room_btn {
+            width          : 1.74rem;
+            height         : .62rem;
+            background     : #0274CB;
+            border-radius  : .05rem;
+            font-size      : .22rem;
+            font-family    : Source Han Sans CN;
+            font-weight    : 400;
+            color          : #FFFFFF;
+            line-height    : .36rem;
+            display        : flex;
+            align-items    : center;
+            justify-content: center;
+            cursor         : pointer;
+        }
+    }
+
+    div.measuring_room_form_remarks {
+        font-size  : .16rem;
+        font-family: Source Han Sans CN;
+        font-weight: 400;
+        color      : #999999;
+        line-height: .36rem;
+        margin-left: 5rem;
+
+        span {}
+    }
+}

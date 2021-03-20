@@ -1,0 +1,80 @@
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+.content_left{
+    display: flex;
+    flex-direction: column;
+    width: 4.533333rem;
+    text-align: center;
+    height: 200px;
+}
+.jq{
+    width: 4.533333rem;
+    height: 4.533333rem;
+    margin-bottom: .133333rem;
+}
+.tab2_content{
+    margin:0 20%;
+}
+.neighbor_case_content_r{
+    display: flex;
+    flex-direction: row;
+}
+.touxiang{
+    width: 1.866667rem;
+    height: 1.866667rem;
+    border-radius: 50%;
+}
+.neighbor_case_content_leftt{
+    margin-right: .266667rem;
+}
+.b_ll {
+    width: 2.933333rem;
+    font-size: .266667rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+    text-align: center;
+}
+.xaingjiee{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: .266667rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #7E7E7E;
+    line-height: .373333rem;
+    margin-top: .133333rem;
+}
+.neighbor_case_content_right_dd{
+    width: 6.933333rem;
+    height: 1.36rem;
+    font-size: .32rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #000000;
+    line-height: .453333rem;
+    margin-top: .133333rem;
+}
+.pingfenb{
+    font-size: .32rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #000000;
+    line-height: .453333rem;
+}
+.name_{
+    height: .453333rem;
+    font-size: .32rem;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #0561B1;
+    line-height: .453333rem;
+
+}

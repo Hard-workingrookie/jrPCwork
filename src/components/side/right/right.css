@@ -1,0 +1,76 @@
+/* Red Top */
+.right_top{
+    position: fixed;
+    right: 0px;
+    top: 40%;
+    background-image: url('../../../styles/images/home/right_red.png');
+    width: 211px;
+    height: 569px;
+}
+#guanbi{
+    float: right;
+    margin-right: 27px;
+}
+.rightNav{
+    padding: 0;
+    margin-top: 62%;
+}
+.rightRed_li{
+    text-align: center;
+}
+.right_con{
+    /* background-color: aqua; */
+    /* border-bottom: black solid 2px; */
+    margin: 30px 0px;
+}
+.right_text{
+    width: 86px;
+    height: 21px;
+    font-size: 22px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 21px;
+}
+
+/* Blue-Nav */
+.rightBlue{
+    position: fixed;
+    background-color: #0085CD;
+    right: 0px;
+    top:55%;
+    width: 60px;
+    height: 268.4px;
+    display: none;
+}
+.rightBlue_con{
+    padding: 0px;
+}
+.rightBlue_li{
+    width: 60px;
+    height: 60px;
+}
+.rightBlue_text{
+    margin: 5px 0px;
+    padding: 5px 0px 15px;
+    /* border-bottom: solid 1px #0068B7; */
+}
+.rightBlue_con li:not(:last-child){
+    border-bottom: solid 1px #0068B7;
+
+}
+.rightBlue_img{
+    display: block;
+    margin: 0 auto;
+}
+.rightBlue_A{
+    width: 48px;
+    height: 11px;
+    font-size: 12px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #FFFFFF;
+    /* line-height: 61px; */
+    display: block;
+    margin: 0 auto;
+}

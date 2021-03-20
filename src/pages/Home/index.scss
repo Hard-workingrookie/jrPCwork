@@ -1,0 +1,1637 @@
+$ratio: 1920 / 56.47; // 缩放比   34
+
+// 返回对应屏幕下的rem值
+@function px2rem($px) {
+    @return $px / $ratio+rem
+}
+
+.title {
+    position : absolute;
+    left     : px2rem(70);
+    font-size: px2rem(20);
+}
+
+.banner_box {
+    height: 5.6rem;
+    width : 100vw;
+
+    .banner_img {
+        height: 100%;
+        width : 100%;
+
+    }
+}
+
+div.sectionTitle_box {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    width          : 100%;
+    flex-direction : column;
+    padding        : .68rem 0;
+
+    span.sectionTitle {
+        font-size  : .4rem;
+        font-family: Lantinghei SC;
+        font-weight: 600;
+        color      : #222222;
+        line-height: .5rem;
+    }
+
+    span.sectionSubTitle {
+        font-size  : .2rem;
+        font-family: Source Han Sans CN;
+        font-weight: 400;
+        color      : #666666;
+        line-height: .5rem;
+    }
+}
+
+
+ul.floor1 {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 100%;
+    padding        : .4rem 0;
+    border-top     : .01rem dotted #ccc;
+    border-bottom  : .01rem dotted #ccc;
+
+    li.floor_list {
+        width          : 2.57rem;
+        height         : 1.06rem;
+        background     : #FFFFFF;
+        box-shadow     : 0rem .04rem .09rem .01rem rgba(102, 102, 102, 0.18);
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        margin-right   : .28rem;
+
+        div.floor_list_left {
+            display       : flex;
+            flex-direction: column;
+            align-items   : flex-start;
+
+            span.floor_list_title {
+                font-size  : .2rem;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color      : #333333;
+            }
+
+            span.floor_desc {
+                font-size  : .16rem;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color      : #999999;
+            }
+        }
+
+        img.floor1_img {
+            width      : .54rem;
+            height     : .43rem;
+            margin-left: .08rem;
+        }
+    }
+}
+
+
+div.floor2 {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 100%;
+    padding        : .69rem 0 .67rem 0;
+
+    img.floor2Img {
+        width       : 8.7rem;
+        height      : 4.68rem;
+        margin-right: .26rem;
+    }
+
+    div.mainMaterial {
+        width              : 4.97rem;
+        height             : 4.66rem;
+        background-image   : url('../../styles/images/home/getPrice.png');
+        background-position: center;
+        background-size    : 100% 100%;
+        display            : flex;
+        flex-direction     : column;
+        justify-content    : center;
+        align-items        : center;
+        padding-top        : 1.2rem;
+
+        .areaInput {
+            position: relative;
+
+        }
+
+        input {
+            width        : 4.5rem;
+            height       : .6rem;
+            background   : #FFFFFF;
+            border       : .01rem solid #EEEEEE;
+            border-radius: .05rem;
+            margin-bottom: .14rem;
+        }
+
+        .square {
+            position   : absolute;
+            right      : .2rem;
+            top        : 25%;
+            font-size  : .16rem;
+            font-family: Source Han Sans CN;
+            font-weight: 400;
+            color      : #999999;
+        }
+
+        div.getPrice {
+            width          : 4.5rem;
+            height         : .5rem;
+            background     : #1570D9;
+            border-radius  : .05rem;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+
+            font-size  : .22rem;
+            font-family: Source Han Sans CN;
+            font-weight: 400;
+            color      : #FFFFFF;
+            line-height: .58rem;
+            cursor     : pointer;
+
+
+        }
+
+        span.notes {
+            padding-left: .23rem;
+            font-size   : .16rem;
+            font-family : Source Han Sans CN;
+            font-weight : 400;
+            color       : #999999;
+            line-height : .58rem;
+            align-self  : start;
+        }
+    }
+}
+
+
+div.floor3_service_box {
+    border-top    : .01rem dotted #ccc;
+    border-bottom : .01rem dotted #ccc;
+    padding-bottom: .63rem;
+
+    ul.floor3_service_list {
+        display            : grid;
+        justify-content    : center;
+        grid-template-areas: "nav a b"
+            "nav c d"
+        ;
+
+        li.floor3_service_item {
+            cursor         : pointer;
+            position       : relative;
+            width          : 4.64rem;
+            height         : 3.04rem;
+            margin-right   : .04rem;
+            margin-bottom  : .06rem;
+            display        : flex;
+            flex-direction : column;
+            justify-content: flex-end;
+            background-size: 100% 100%;
+
+            img.floor3_service_img {
+                width  : 100%;
+                height : 100%;
+                z-index: 1;
+            }
+
+            span.floor3_service_title {
+                padding-left : .32rem;
+                position     : absolute;
+                font-size    : .32rem;
+                font-family  : Source Han Sans CN;
+                font-weight  : 400;
+                color        : #110d0d;
+                line-height  : .58rem;
+                margin-bottom: 1.55rem;
+                z-index      : 11;
+            }
+
+            span.floor3_service_subTitle {
+                padding-left : .32rem;
+                position     : absolute;
+                font-size    : .22rem;
+                font-family  : Source Han Sans CN;
+                font-weight  : 400;
+                color        : #FFFFFF;
+                line-height  : .58rem;
+                margin-bottom: 1.11rem;
+                z-index      : 11;
+            }
+
+            button.floor3_service_btn {
+                margin-left    : .32rem;
+                position       : absolute;
+                width          : 2.06rem;
+                height         : .41rem;
+                border         : .02rem solid #EDA721;
+                font-size      : .2rem;
+                font-family    : Source Han Sans CN;
+                font-weight    : 400;
+                color          : #EDA721;
+                line-height    : .58rem;
+                display        : flex;
+                justify-content: center;
+                align-items    : center;
+                margin-bottom  : .44rem;
+                z-index        : 11;
+                outline        : none;
+
+                cursor: pointer;
+            }
+        }
+
+        li.floor3_service_item:first-child {
+            width    : 4.64rem;
+            height   : 6.15rem;
+            grid-area: nav;
+
+            button.floor3_service_btn {
+                margin-left     : .32rem;
+                position        : absolute;
+                width           : 2.06rem;
+                height          : .41rem;
+                background-color: #EDA721;
+                font-size       : .2rem;
+                font-family     : Source Han Sans CN;
+                font-weight     : 400;
+                color           : #333333;
+                line-height     : .58rem;
+                display         : flex;
+                justify-content : center;
+                align-items     : center;
+                margin-bottom   : .44rem;
+            }
+        }
+
+        li.floor3_service_item:nth-child(2) {
+            // position  : absolute;
+            // margin-top: 3.1rem;
+            grid-area: a;
+
+        }
+
+        li.floor3_service_item:nth-child(3) {
+            margin-right: 0;
+            grid-area   : b;
+        }
+
+        li.floor3_service_item:nth-child(4) {
+            // position  : absolute;
+            // margin-top: 3.1rem;
+            grid-area: c;
+
+        }
+
+
+        li.floor3_service_item:last-child {
+            // position    : absolute;
+            margin-right   : 0;
+            // margin-top  : 3.1rem;
+            // margin-left : 9.36rem;
+            grid-area      : d;
+        }
+    }
+}
+
+
+div.Heart_selected_list_box {
+    border-bottom  : .01rem dotted #ccc;
+    display        : flex;
+    justify-content: center;
+    flex-direction : column;
+    background-size: 100%;
+    padding-bottom : .72rem;
+
+    div.Heart_selected_list {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+
+        div.Heart_selected_list_left {
+            display       : flex;
+            flex-direction: column;
+
+            div.Heart_selected_title {
+                display       : flex;
+                padding-bottom: .34rem;
+                align-items   : flex-end;
+
+
+                span.Heart_selected_title_left {
+                    color    : #222;
+                    position : relative;
+                    font-size: .32rem;
+                }
+
+                span.Heart_selected_title_left::after {
+                    position   : absolute;
+                    content    : '';
+                    width      : 2rem;
+                    height     : .03rem;
+                    background : #1570D9;
+                    margin-top : .5rem;
+                    margin-left: -2.0rem;
+                }
+
+                span.Heart_selected_title_right {
+                    font-size: .2rem;
+                    color    : #999;
+                }
+            }
+
+
+
+            div.Heart_selected_service_content {
+
+                img.selected_service_content_img {
+                    width : .25rem;
+                    height: .25rem;
+                }
+
+                span.selected_service_content_name {
+                    font-size  : .2rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: 400;
+                    color      : #666666;
+                    line-height: .48rem;
+                }
+
+                span.selected_service_content_txt {
+                    font-size  : .2rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: 400;
+                    color      : #333;
+                    line-height: .48rem;
+                }
+
+                .selected_service_promise_img {
+                    width : .24rem;
+                    height: .3rem;
+                }
+            }
+
+            span.Heart_selected_service_desc {
+                padding-top   : .32rem;
+                padding-bottom: .2rem;
+                font-size     : .22rem;
+                font-family   : Source Han Sans CN;
+                font-weight   : 400;
+                color         : #666666;
+                line-height   : .48rem;
+            }
+
+            img.Heart_selected_service_process {
+                width        : 4.27rem;
+                height       : .18rem;
+                margin-bottom: .15rem;
+            }
+
+            span.Heart_selected_service_Quota {
+                font-size    : .2rem;
+                font-family  : Source Han Sans CN;
+                font-weight  : 400;
+                color        : #333333;
+                line-height  : .48rem;
+                margin-bottom: .43rem;
+            }
+
+            div.grab_offer_now {
+                cursor          : pointer;
+                width           : 4.18rem;
+                height          : .65rem;
+                position        : relative;
+                background-color: #1570D9;
+                display         : flex;
+                justify-content : center;
+                align-items     : center;
+                border-radius   : .4rem;
+
+                span.grab_offer_now_txt {
+                    position   : absolute;
+                    font-size  : .22rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: 400;
+                    color      : #F8F8F8;
+                    line-height: .48rem;
+                }
+            }
+        }
+
+
+        div.Heart_selected_list_right {
+            margin-left: .55rem;
+
+            img.Heart_selected_list_right_maxImg {
+                width : 8.39rem;
+                height: 4.02rem;
+            }
+
+            img.Heart_selected_list_right_smallImg {
+                width     : .94rem;
+                height    : 1.11rem;
+                position  : absolute;
+                margin-top: -0.6rem;
+            }
+        }
+    }
+}
+
+
+
+div.reasons_story {
+    display        : flex;
+    justify-content: center;
+    flex-direction : column;
+    align-items    : center;
+    padding        : .72rem 0 .68rem 0;
+
+    div.Seven_reasons {
+        display      : flex;
+        align-items  : center;
+        margin-bottom: .26rem;
+
+        div.Seven_reasons_left {
+            width          : 3.08rem;
+            height         : 2.51rem;
+            display        : flex;
+            flex-direction : column;
+            justify-content: center;
+            background-size: 100%;
+
+            span.Seven_reasons_left_title {
+                font-size    : .28rem;
+                font-family  : FZDaBiaoSong-B06S;
+                font-weight  : 400;
+                color        : #FFFFFF;
+                line-height  : .48rem;
+                padding-left : .55rem;
+                margin-bottom: .14rem;
+
+            }
+
+            span.Seven_reasons_left_subTitle {
+                font-size    : .28rem;
+                font-family  : Source Han Sans CN;
+                font-weight  : 400;
+                color        : #FFFFFF;
+                line-height  : .48rem;
+                padding-left : .55rem;
+                margin-bottom: .25rem;
+
+            }
+
+            span.Seven_reasons_txt {
+                font-size   : .45rem;
+                font-family : Lantinghei SC;
+                font-weight : 600;
+                color       : #FFFFFF;
+                line-height : .48rem;
+                padding-left: .55rem;
+
+            }
+        }
+
+        div.Seven_reasons_list {
+            width          : 2.72rem;
+            height         : 2.5rem;
+            display        : flex;
+            flex-direction : column;
+            justify-content: center;
+            align-items    : center;
+            border         : .01rem solid #999999;
+
+            img.Seven_reasons_list_img {
+                width        : .61rem;
+                height       : .62rem;
+                margin-bottom: .23rem;
+            }
+
+            span.Seven_reasons_list_title {
+                font-size    : .22rem;
+                font-family  : Source Han Sans CN;
+                font-weight  : 400;
+                color        : #222222;
+                margin-bottom: .25rem;
+            }
+
+            span.Seven_reasons_list_desc {
+                font-size  : .2rem;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color      : #666666;
+            }
+        }
+
+        div.Seven_reasons_list_first {
+            width          : 2.72rem;
+            height         : 2.5rem;
+            display        : flex;
+            flex-direction : column;
+            justify-content: center;
+            align-items    : center;
+            border         : .01rem solid #999999;
+            border-right   : 0;
+            border-left    : 0;
+
+            img.Seven_reasons_list_img {
+                width        : 1.3rem;
+                height       : .39rem;
+                margin-bottom: .29rem;
+            }
+
+            span.Seven_reasons_list_title {
+
+                font-size    : .22rem;
+                font-family  : Source Han Sans CN;
+                font-weight  : 400;
+                color        : #222222;
+                margin-bottom: .22rem;
+            }
+
+            span.Seven_reasons_list_desc {
+                font-size  : .24rem;
+                font-family: FZZongYi-M05S;
+                font-weight: 500;
+                color      : #333333;
+                line-height: .48rem;
+            }
+        }
+    }
+
+    div.Brand_story {
+        display: flex;
+
+        div.Brand_story_video {
+            background-size: 100%;
+            width          : 10.14rem;
+            height         : 3.45rem;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+            cursor         : pointer;
+
+            img.Brand_story_play_video {
+                width : 1.1rem;
+                height: 1.1rem;
+            }
+        }
+
+        div.Brand_story_right {
+            width          : 3.86rem;
+            height         : 3.45rem;
+            display        : flex;
+            flex-direction : column;
+            justify-content: center;
+            align-items    : flex-end;
+            background-size: 100%;
+            border         : .01rem dotted #999999;
+
+            img.Brand_story_logo {
+                width        : 2.5rem;
+                height       : .36rem;
+                margin-right : .35rem;
+                margin-bottom: .41rem;
+            }
+
+            span.Brand_story_txt {
+                font-size    : .45rem;
+                font-family  : Lantinghei SC;
+                font-weight  : 600;
+                color        : #3E3A39;
+                margin-right : .35rem;
+                line-height  : .3rem;
+                margin-bottom: .29rem;
+            }
+
+            span.Brand_story_subtxt {
+                font-size    : .2rem;
+                font-family  : Source Han Sans CN;
+                font-weight  : 400;
+                color        : #666666;
+                margin-right : .35rem;
+                line-height  : .3rem;
+                margin-bottom: .26rem;
+            }
+
+            div.learn_more_story {
+                width          : 1.75rem;
+                height         : .45rem;
+                background     : #333333;
+                font-size      : .2rem;
+                font-family    : Source Han Sans CN;
+                font-weight    : 400;
+                color          : #FFFFFF;
+                line-height    : .3rem;
+                display        : flex;
+                margin-right   : .35rem;
+                justify-content: center;
+                align-items    : center;
+                cursor         : pointer;
+            }
+        }
+    }
+}
+
+
+//装修流程
+div.decoration_process {
+    background-size   : 100% 100%;
+    width             : 100vw;
+    height            : 4.19rem;
+    display           : flex;
+    flex-direction    : column;
+    // justify-content: center;
+    align-items       : center;
+    border-top        : .01rem dotted #000;
+    border-bottom     : .01rem dotted #000;
+
+    span.decoration_process_title {
+        font-size    : .4rem;
+        font-family  : Lantinghei SC;
+        font-weight  : 600;
+        color        : #FFFFFF;
+        line-height  : .42rem;
+        margin-top   : .62rem;
+        margin-bottom: .27rem;
+    }
+
+    span.decoration_process_subTit {
+        font-size  : .22rem;
+        font-family: Source Han Sans CN;
+        font-weight: 400;
+        color      : #FFFFFF;
+        line-height: .42rem;
+    }
+
+    ul.decoration_process_wrap {
+        display    : flex;
+        align-items: center;
+        margin-top : .57rem;
+
+        li.decoration_process_list {
+            display        : flex;
+            flex-direction : column;
+            justify-content: center;
+            align-items    : center;
+            margin-right   : .51rem;
+
+            img.decoration_process_icon {
+                width : 1.04rem;
+                height: 1.04rem;
+            }
+
+            span.decoration_process_name {
+                font-size  : .2rem;
+                font-family: Source Han Sans CN;
+                font-weight: bold;
+                color      : #FFFFFF;
+                line-height: .4rem;
+                margin-top : .12rem;
+            }
+        }
+
+        li.decoration_process_list:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+
+//工地直播
+
+.site_live_floor {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    padding-bottom: .63rem;
+
+    div.site_live_box {
+        display        : flex;
+        align-items    : flex-start;
+        justify-content: center;
+
+        div.site_live_left {
+            display          : flex;
+            flex-direction   : column;
+            // align-items   : center;
+
+            .scrollingText_carousel {
+                width        : 7.01rem !important;
+                margin-bottom: .33rem;
+
+                div.scrollingText {
+                    display      : flex !important;
+                    align-items  : center;
+                    width        : 7.01rem !important;
+                    height       : .56rem;
+                    background   : #F8F8F8;
+                    border-radius: .28rem;
+
+                    img.site_live_dizhi_icon {
+                        width      : .32rem;
+                        height     : .36rem;
+                        margin-left: .49rem;
+                    }
+
+                    p.site_live_dizhi_txt {
+                        font-size  : .22rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color      : #222222;
+                    }
+                }
+            }
+
+            div.site_live_list {
+                display              : grid;
+                grid-template-columns: 1fr 1fr;
+                grid-row-gap         : .78rem;
+                grid-column-gap      : .25rem;
+
+                div.site_live_item {
+                    width   : 4.21rem;
+                    height  : 2.66rem;
+                    position: relative;
+
+                    .site_live_item_img {
+                        width : 100%;
+                        height: 100%;
+                    }
+
+                    img.site_live_redFlag {
+                        width   : .73rem;
+                        height  : .71rem;
+                        position: absolute;
+                        right   : .12rem;
+
+
+                    }
+
+                    .hot_sites_txt {
+                        width      : .39rem;
+                        height     : .4rem;
+                        font-size  : .18rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color      : #FFFFFF;
+                        line-height: .24rem;
+                        position   : absolute;
+                        right      : .24rem;
+                        word-break : break-all;
+                        top        : .04rem;
+
+                    }
+
+                    div.site_live_list_info {
+                        display           : flex;
+                        // justify-content: space-between;
+                        position          : relative;
+                        align-items       : center;
+                        margin            : .16rem .16rem 0 .2rem;
+
+                        .site_live_list_address {
+                            font-size  : .2rem;
+                            font-family: Source Han Sans CN;
+                            font-weight: 400;
+                            color      : #3C3C3C;
+                            line-height: .31rem;
+                        }
+
+                        .site_live_list_browse {
+                            font-size  : .16rem;
+                            font-family: Source Han Sans CN;
+                            font-weight: 400;
+                            color      : #999999;
+                            line-height: .31rem;
+                            flex       : 1;
+                            text-align : right;
+                        }
+
+                        .site_live_list_browse_num {
+                            font-size  : .16rem;
+                            font-family: Source Han Sans CN;
+                            font-weight: 400;
+                            color      : #333333;
+                            line-height: .31rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        div.site_live_right {
+            margin-left: .24rem;
+
+            div.site_live_right_from {
+                background-size: 100% 100%;
+                display        : flex;
+                flex-direction : column;
+                align-items    : center;
+                width          : 5.06rem;
+                height         : 5.96rem;
+                border         : .01rem dotted #000;
+                margin-bottom  : .24rem;
+
+                p {
+                    font-size  : .16rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: 400;
+                    color      : #999999;
+                    line-height: .58rem;
+                    padding    : .32rem 0 .41rem 0;
+                }
+
+                div.site_live_right_Btns {
+                    display        : flex;
+                    align-items    : center;
+                    justify-content: center;
+                    margin-bottom  : .3rem;
+
+                    div.visit_construction_site {
+                        width          : 2.3rem;
+                        height         : .7rem;
+                        background     : #3E3E3E;
+                        display        : flex;
+                        justify-content: center;
+                        align-items    : center;
+                        cursor         : pointer;
+
+                        font-size  : .22rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: bold;
+                        color      : #FFFFFF;
+                        line-height: .28rem;
+                    }
+
+                    div.get_community_benefits {
+                        width          : 2.3rem;
+                        height         : .7rem;
+                        background     : #FFFFFF;
+                        display        : flex;
+                        justify-content: center;
+                        align-items    : center;
+                        cursor         : pointer;
+                        margin-left    : .07rem;
+                        font-size      : .22rem;
+                        font-family    : Source Han Sans CN;
+                        font-weight    : bold;
+                        color          : #222222;
+                        line-height    : .28rem;
+                    }
+                }
+
+                div.site_live_froms {
+                    display       : flex;
+                    flex-direction: column;
+
+                    input.site_live_froms_input {
+                        width        : 4.65rem;
+                        height       : .6rem;
+                        background   : #FFFFFF;
+                        border       : .01rem solid #CBCBCB;
+                        border-radius: .05rem;
+                        margin-bottom: .17rem;
+                    }
+                }
+
+                span.telephone_application {
+                    font-size    : .18rem;
+                    font-family  : Source Han Sans CN;
+                    font-weight  : 400;
+                    color        : #FB060C;
+                    line-height  : .28rem;
+                    margin-bottom: .32rem;
+                }
+
+                div.One_click_appointment {
+                    width          : 4.22rem;
+                    height         : .6rem;
+                    background     : #1570D9;
+                    border-radius  : .3rem;
+                    display        : flex;
+                    align-items    : center;
+                    justify-content: center;
+                    font-size      : .22rem;
+                    font-family    : Source Han Sans CN;
+                    font-weight    : 400;
+                    color          : #FFFFFF;
+                    line-height    : .28rem;
+                    cursor         : pointer;
+
+                }
+            }
+
+            div.site_live_see_more {
+                width          : 5.06rem;
+                height         : 1.3rem;
+                background-size: 100% 100%;
+                display        : flex;
+                justify-content: center;
+                align-items    : center;
+                font-size      : .24rem;
+                font-family    : Source Han Sans CN;
+                font-weight    : 400;
+                color          : #FFFFFF;
+                line-height    : .28rem;
+                cursor         : pointer;
+            }
+        }
+    }
+}
+
+div.selected_cases_box {
+    width          : 100vw;
+    height         : 9.4rem;
+    background-size: 100% 100%;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+
+    p.selected_cases_title {
+        font-size    : .4rem;
+        font-family  : Lantinghei SC;
+        font-weight  : 600;
+        color        : #FFFFFF;
+        line-height  : .42rem;
+        margin-top   : .62rem;
+        margin-bottom: .27rem;
+    }
+
+    p.selected_cases_subtitle {
+        font-size    : .22rem;
+        font-family  : Source Han Sans CN;
+        font-weight  : 400;
+        color        : #FFFFFF;
+        line-height  : .42rem;
+        margin-bottom: .54rem;
+    }
+
+
+    div.selected_cases_content {
+        display: flex;
+
+        .selected_cases_content_left {
+            img.selected_cases_content_case {
+                width : 9.26rem;
+                height: 4.83rem;
+                border: .01rem dotted #fff;
+            }
+
+            .case_note_carousel {
+                width     : 4rem;
+                overflow  : hidden;
+                margin-top: .21rem;
+
+                div.case_note_text {
+                    display    : flex !important;
+                    align-items: center !important;
+
+                    img.case_note_laba_icon {
+                        width       : .24rem;
+                        height      : .2rem;
+                        margin-right: .11rem;
+                    }
+
+                    p.case_notes_txt {
+                        font-size  : .2rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color      : #FFFFFF;
+                        margin     : 0;
+
+
+                    }
+                }
+            }
+        }
+
+        div.selected_cases_content_design {
+            display       : flex;
+            flex-direction: column;
+
+            div.case_pagination {
+                display        : flex;
+                justify-content: flex-end;
+                align-items    : center;
+
+                img.case_pagination_left {
+                    width       : .24rem;
+                    height      : .21rem;
+                    margin-right: .2rem;
+                }
+
+                span.case_pagination_nums {
+                    font-size  : .20rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: 400;
+                    color      : #999999;
+                    line-height: .58rem;
+
+                }
+
+                img.case_pagination_right {
+                    width      : .24rem;
+                    height     : .21rem;
+                    margin-left: .2rem;
+                }
+            }
+
+            div.case_design_card {
+                width          : 5.63rem;
+                height         : 4.6rem;
+                border         : .01rem dotted #fff;
+                display        : flex;
+                flex-direction : column;
+                background-size: 100% 100%;
+                color          : #fff;
+                margin-left    : -0.9rem;
+
+                div.case_design_info {
+                    display     : flex;
+                    align-items : center;
+                    margin-top  : .38rem;
+                    padding-left: .44rem;
+
+                    img.case_design_avator {
+                        width        : 1.48rem;
+                        height       : 1.46rem;
+                        border-radius: 50%;
+                    }
+
+                    div.case_design_info_right {
+                        margin-left: .3rem;
+
+                        span.case_design_info_name {
+                            width       : .71rem;
+                            height      : .23rem;
+                            font-size   : .24rem;
+                            font-family : Lantinghei SC;
+                            font-weight : 600;
+                            color       : #FFFFFF;
+                            line-height : .58rem;
+                            margin-right: .23rem;
+                        }
+
+                        span.case_design_info_title {
+                            margin-top   : .26rem;
+                            margin-bottom: .16rem;
+                        }
+
+                        p.case_design_info_years {
+                            margin-bottom: .16rem;
+
+                            span {}
+                        }
+
+                        p {}
+
+                        span.design_concept {
+                            font-size  : .18rem;
+                            font-family: Source Han Sans CN;
+                            font-weight: 400;
+                            color      : #FFFFFF;
+                            line-height: .32rem;
+                        }
+                    }
+                }
+
+                div.case_address_info {
+                    margin-top    : .47rem;
+                    display       : flex;
+                    flex-direction: column;
+                    padding-left  : .55rem;
+
+                    .case_house_name {
+                        font-size    : .24rem;
+                        font-family  : Source Han Sans CN;
+                        font-weight  : 400;
+                        color        : #FFFFFF;
+                        line-height  : .22rem;
+                        margin-bottom: .27rem;
+                    }
+
+                    .typeInformation {
+                        margin-bottom: .19rem;
+
+                        span {}
+                    }
+
+                    .customer_rating_box {
+                        display      : flex;
+                        align-items  : center;
+                        margin-bottom: .3rem;
+
+                        img {
+                            width       : .19rem;
+                            height      : .18rem;
+                            margin-right: .03rem;
+                        }
+                    }
+                }
+
+                div.case_design_card_btns {
+                    display     : flex;
+                    align-items : center;
+                    padding-left: .55rem;
+
+                    div.case_design_btn_free {
+                        background-color: #1570D9;
+                        width           : 2.19rem;
+                        height          : .49rem;
+                        font-size       : .22rem;
+                        font-family     : Source Han Sans CN;
+                        font-weight     : 400;
+                        color           : #FFFFFF;
+                        line-height     : .22rem;
+                        margin-right    : .24rem;
+                        display         : flex;
+                        justify-content : center;
+                        align-items     : center;
+                        border-radius   : .3rem;
+                        cursor          : pointer;
+                    }
+
+                    div.case_design_btn_now {
+                        border         : .01rem solid #F4F4F4;
+                        cursor         : pointer;
+                        width          : 2.19rem;
+                        height         : .49rem;
+                        font-size      : .22rem;
+                        font-family    : Source Han Sans CN;
+                        font-weight    : 400;
+                        color          : #FFFFFF;
+                        line-height    : .22rem;
+                        display        : flex;
+                        justify-content: center;
+                        border-radius  : .3rem;
+                        align-items    : center;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    ul.selected_cases_tags {
+        display    : flex;
+        align-items: center;
+        margin-top : .34rem;
+
+        .selected_cases_tag {
+            width          : 1.65rem;
+            height         : .54rem;
+            border         : .01rem solid #EDA721;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+            font-size      : .2rem;
+            font-family    : Source Han Sans CN;
+            font-weight    : 400;
+            color          : #EDA721;
+            line-height    : .58rem;
+            margin-right   : .11rem;
+        }
+
+        .ant-tag-checkable-checked {
+            background : #EDA721;
+            font-size  : .2rem;
+            font-family: Source Han Sans CN;
+            font-weight: 400;
+            color      : #333333;
+            line-height: .58rem;
+        }
+    }
+
+}
+
+.stylesTestImg {
+    width     : 100vw;
+    height    : 1.81rem;
+    border-top: .01rem dotted #f7f7f7;
+    cursor    : pointer;
+}
+
+
+//业主之声
+
+div.voice_owners_box {
+    padding-bottom: .61rem;
+
+    .voice_owners_carousel {
+        display    : flex;
+        align-items: center;
+
+        // margin-bottom:.46rem;
+        .voice_owners_list_wrap {
+            display        : flex !important;
+            align-items    : center !important;
+            justify-content: center;
+            margin-bottom  : .96rem;
+
+            div.voice_owners_list {
+                width          : 4.4rem;
+                // height      : 6.51rem;
+                background     : #FFFFFF;
+                box-shadow     : 0rem 0rem .15rem 0rem rgba(102, 102, 102, 0.15);
+                display        : flex;
+                align-items    : start;
+                margin-right   : .27rem;
+                padding        : .42rem .38rem .48rem .17rem;
+
+                img.voice_owners_avator {
+                    width        : .62rem;
+                    height       : .62rem;
+                    border-radius: 50%;
+                    margin-right : .18rem;
+                }
+
+                div.voice_owners_info {
+                    display       : flex;
+                    flex-direction: column;
+                    align-items   : start;
+
+                    p.voice_owners_name {
+                        font-size  : .22rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color      : #222222;
+                        margin     : 0;
+                    }
+
+                    p {
+                        font-size  : .18rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color      : #999999;
+                        display    : flex;
+                        align-items: center;
+                        padding-top: .17rem;
+                        margin     : 0;
+
+                        span.voice_owners_time {
+                            color       : #999999;
+                            margin-right: .18rem;
+                        }
+
+                        span {
+                            color: #222222;
+                        }
+                    }
+
+                    div.voice_owners_rate {
+                        display    : flex;
+                        align-items: center;
+                        padding-top: .2rem;
+
+                        span {
+                            font-size   : .2rem;
+                            font-family : Source Han Sans CN;
+                            font-weight : 400;
+                            color       : #666666;
+                            margin-right: .11rem;
+                        }
+
+                        img.voice_owners_rate_icon {
+                            width       : .19rem;
+                            height      : .18rem;
+                            margin-right: .03rem;
+                        }
+
+                    }
+
+                    p.design_service_construction {
+                        font-size      : .2rem;
+                        font-family    : Source Han Sans CN;
+                        font-weight    : 400;
+                        color          : #fae7e7;
+                        display        : flex;
+                        justify-content: space-evenly;
+                        align-items    : center;
+                        margin         : 0;
+
+                        span {
+                            font-size  : .2rem;
+                            font-family: Source Han Sans CN;
+                            font-weight: 400;
+                            color      : #999999;
+                        }
+                    }
+
+                    p.voice_owners_evaluate {
+                        font-size         : .18rem;
+                        font-family       : Source Han Sans CN;
+                        font-weight       : 400;
+                        color             : #333333;
+                        line-height       : .32rem;
+                        display           : -webkit-box;
+                        overflow          : hidden;
+                        -webkit-line-clamp: 3;
+                        text-overflow     : ellipsis;
+                        -webkit-box-orient: vertical;
+                        margin            : 0;
+                        margin            : 0 0 .2rem 0;
+                    }
+
+                    .voice_owners_imgs {
+                        display              : grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-column-gap      : .13rem;
+                        grid-row-gap         : .1rem;
+                        position             : relative;
+
+                        img.voice_owners_img {
+                            width        : 1.43rem;
+                            height       : 1.42rem;
+                            border-radius: .1rem;
+                        }
+
+                        div.voice_owners_img_numBox {
+                            position        : absolute;
+                            bottom          : .13rem;
+                            right           : .08rem;
+                            width           : .69rem;
+                            height          : .27rem;
+                            border-radius   : .15rem;
+                            cursor          : pointer;
+                            display         : flex;
+                            justify-content : center;
+                            align-items     : center;
+                            background-color: rgba(0, 0, 0, 0.45);
+
+                            img.voice_owners_img_icon {
+                                width : .17rem;
+                                height: .15rem;
+                            }
+
+                            span.voice_owners_img_nums {
+                                margin-left: .1rem;
+                                font-size  : .18rem;
+                                font-family: Source Han Sans CN;
+                                font-weight: 400;
+                                color      : #FFFFFF;
+                                line-height: .4rem;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    .voice_owners_carousel .slick-dots {
+        // margin-left : 50%;
+        // margin-right: 15%;
+
+        li {
+            width       : .1rem;
+            height      : .1rem;
+            margin-right: .19rem;
+            margin-left : 0;
+
+            button {
+                width        : .1rem;
+                height       : .1rem;
+                background   : #666666;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .voice_owners_carousel .slick-dots li.slick-active button {
+        background: #1570D9;
+    }
+
+    div.getProgramme_evaluate {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        padding-top    : .16rem;
+
+        img.getProgramme_btn {
+            width       : 4.55rem;
+            height      : .59rem;
+            margin-right: .23rem;
+            cursor      : pointer;
+        }
+
+        div.getEvaluate_btn {
+            width          : 3.16rem;
+            height         : .58rem;
+            background     : #1570D9;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+            font-size      : .2rem;
+            font-family    : Source Han Sans CN;
+            font-weight    : 400;
+            color          : #FFFFFF;
+            line-height    : .31rem;
+            cursor         : pointer;
+
+        }
+    }
+}
+
+
+div.decoration_knowledge {
+    background-color: #F8F8F8;
+    padding-bottom  : .62rem;
+
+    div.decoration_knowledge_wrap {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+
+        div.decoration_knowledge_list {
+            display       : flex;
+            flex-direction: column;
+            align-items   : center;
+
+            div.decoration_knowledge_list_top {
+                width          : 3.26rem;
+                height         : 1.89rem;
+                position       : relative;
+                display        : flex;
+                justify-content: center;
+                align-items    : center;
+                position       : relative;
+                margin-left    : .3rem;
+
+                img.decoration_knowledge_img {
+                    width : 100%;
+                    height: 100%;
+                }
+
+
+                span.decoration_knowledge_title {
+                    position   : absolute;
+                    font-size  : .28rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: bold;
+                    color      : #FFFFFF;
+                    line-height: .4rem;
+                    z-index    : 1;
+                }
+            }
+
+            div.decoration_knowledge_list_top:first-child {
+                margin-left: 0;
+            }
+
+            div.decoration_knowledge_list_top::after {
+                content         : '';
+                position        : absolute;
+                width           : 100%;
+                height          : 100%;
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+
+            div.decoration_knowledge_list_bottom {
+                background-color: #fff;
+                display         : flex;
+                flex-direction  : column;
+                align-items     : start;
+                border-right    : .01rem dotted #999899;
+                margin-top      : .44rem;
+                padding         : .44rem .46rem .34rem .27rem;
+
+                span.decoration_knowledge_subTitle {
+                    font-size    : .26rem;
+                    font-family  : Source Han Sans CN;
+                    font-weight  : bold;
+                    color        : #333333;
+                    line-height  : .4rem;
+                    position     : relative;
+                    margin-bottom: .46rem;
+                }
+
+                span.decoration_knowledge_subTitle::after {
+                    content    : '';
+                    position   : absolute;
+                    width      : 1.14rem;
+                    height     : .02rem;
+                    background : #3E3E3E;
+                    margin-left: -1rem;
+                    margin-top : .5rem;
+                }
+
+                div.decoration_knowledge_list_wrap {
+                    div.decoration_knowledge_desc {
+                        img.decoration_knowledge_edge {
+                            width       : .12rem;
+                            height      : .12rem;
+                            margin-right: .05rem;
+                        }
+
+                        span.decoration_knowledge_txt {
+                            font-size    : .18rem;
+                            font-family  : Source Han Sans CN;
+                            font-weight  : 400;
+                            color        : #666666;
+                            line-height  : .4rem;
+                            white-space  : nowrap;
+                            overflow     : hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+
+                div.decoration_knowledge_more {
+                    width          : 1.72rem;
+                    height         : .4rem;
+                    background     : #FFFFFF;
+                    border         : .01rem solid #999999;
+                    font-size      : .16rem;
+                    font-family    : Source Han Sans CN;
+                    font-weight    : 400;
+                    color          : #999999;
+                    display        : flex;
+                    justify-content: center;
+                    align-items    : center;
+                    margin-top     : .29rem;
+
+                    img.decoration_knowledge_jiantou {
+                        width : .25rem;
+                        height: .14rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+//友情链接
+
+div.friendly_Link_box {
+    background-color: #fff;
+    padding         : .5rem 0 .27rem 0;
+    width           : 14.4rem;
+    margin          : 0 auto;
+
+    div.friendly_Link_box_top {
+        border-bottom  : .01rem solid #999999;
+        margin-bottom  : .44rem;
+        display        : flex;
+        justify-content: space-between;
+        align-items    : flex-end;
+        position       : relative;
+
+        img.friendLinkIcon {
+            width        : 1.58rem;
+            height       : .59rem;
+            margin-bottom: .1rem;
+
+
+        }
+
+        span.exchanging_links {
+            font-size    : .18rem;
+            font-family  : Source Han Sans CN;
+            font-weight  : 400;
+            color        : #999999;
+            line-height  : .4rem;
+            margin-bottom: .1rem;
+        }
+    }
+
+    div.friendly_Link_box_top::after {
+        position  : absolute;
+        content   : '';
+        width     : 1.64rem;
+        height    : .03rem;
+        background: #0068B7;
+    }
+
+    div.friendly_Links {
+        display  : flex;
+        flex-wrap: wrap;
+
+        a.friendly_Link_item {
+            margin         : 0 .63rem .29rem 0;
+            font-size      : .18rem;
+            font-family    : Source Han Sans CN;
+            font-weight    : 400;
+            color          : #666666;
+            line-height    : .4rem;
+            text-decoration: none;
+        }
+    }
+}

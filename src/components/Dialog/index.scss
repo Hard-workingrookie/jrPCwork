@@ -1,0 +1,108 @@
+.my_dialog_box {
+	position : absolute;
+	top      : 50%;
+	left     : 50%;
+	transform: translate(-50%, -50%);
+	width    : 9.48rem;
+	height   : 4.28rem;
+
+	.dialog_bg {
+		width          : 100%;
+		height         : 100%;
+		background-size: 100% 100%;
+		position       : relative;
+
+		.design_input_grounp {
+			display        : flex;
+			flex-direction : column;
+			align-items    : flex-end;
+			justify-content: center;
+			position       : absolute;
+			margin-left    : 5.5rem;
+			margin-top     : 1.18rem;
+
+			.design_input {
+				width        : 2.88rem;
+				height       : .4rem;
+				background   : #FFFFFF;
+				border       : .01rem solid #EBEBEB;
+				margin-bottom: .2rem;
+				font-size    : .16rem;
+				font-family  : PingFangSC-Regular, PingFang SC;
+				font-weight  : 400;
+				line-height  : .22rem;
+				color        : #333;
+
+			}
+
+			input::-webkit-input-placeholder {
+				color: #BBBBBB !important;
+
+			}
+
+			.square {
+				position   : absolute;
+				font-size  : .16rem;
+				font-family: PingFangSC-Regular, PingFang SC;
+				font-weight: 400;
+				color      : #BBBBBB;
+				line-height: .22rem;
+				margin-top : .1rem;
+				right      : .1rem;
+			}
+		}
+
+		.dialog_btn {
+			cursor         : pointer;
+			width          : 2.88rem;
+			height         : .48rem;
+			background     : #0166B3;
+			border-radius  : .03rem;
+			font-size      : .18rem;
+			font-family    : PingFangSC-Regular, PingFang SC;
+			font-weight    : 400;
+			color          : #FFFFFF;
+			line-height    : .25rem;
+			display        : flex;
+			justify-content: center;
+			align-items    : center;
+			position       : absolute;
+			bottom         : .8rem;
+			right          : 1.1rem;
+		}
+	}
+
+	.dialog_close_btn_box {
+		position       : absolute;
+		right          : .1rem;
+		top            : 0;
+		cursor         : pointer;
+		width          : .4rem;
+		height         : .4rem;
+		background     : #FFFFFF;
+		border-radius  : 50%;
+		display        : flex;
+		justify-content: center;
+		align-items    : center;
+
+		.dialog_close_btn {
+			display        : flex;
+			justify-content: center;
+			align-items    : center;
+			width          : .32rem;
+			height         : .32rem;
+			background     : #0166B3;
+			border-radius  : 50%;
+
+			span {
+				color      : #fff;
+				font-weight: 500;
+				font-size  : .3rem;
+				margin-top : -.05rem;
+			}
+		}
+	}
+
+
+
+}

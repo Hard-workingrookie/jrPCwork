@@ -1,0 +1,231 @@
+div.headContainer {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 111;
+    div.header_top {
+        width          : 11.86rem;
+        margin         : 0 auto;
+        display        : flex;
+        align-items    : center;
+        height         : .3rem;
+        justify-content: space-between;
+        background     : #F8F8F8;
+
+        div.header_top_left {
+            div.change_address {
+                cursor: pointer;
+
+                img.address_icon {
+                    width : .21rem;
+                    height: .21rem;
+                }
+
+                span.address_name {
+                    font-size  : .14rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: 400;
+                    color      : #999999;
+                    line-height: .58rem;
+
+                }
+
+                span.switch_address {
+                    color      : #212628;
+                    font-size  : .14rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: 400;
+                    line-height: .58rem;
+                }
+            }
+        }
+
+        div.header_top_right {
+            font-size  : .12rem;
+            font-family: Source Han Sans CN;
+            font-weight: 400;
+            color      : #999999;
+            line-height: .33rem;
+            display    : flex;
+            align-items: center;
+
+            div.preferential_activities {
+                img.gift_icon {
+                    width       : .18rem;
+                    height      : .18rem;
+                    margin-right: .03rem;
+                    cursor: pointer;
+                }
+
+                span.activities_span {
+                    margin-right: .12rem;
+                }
+
+                span.online_consultation {}
+            }
+
+            div.consultation_hotline {
+                margin-left: .56rem;
+
+                img.phone_icon {
+                    width       : .16rem;
+                    height      : .16rem;
+                    margin-right: .05rem;
+                }
+
+                span.hotline_phone {}
+            }
+        }
+    }
+
+    .header_line {
+        width           : 100vw;
+        height          : .01rem;
+        background-color: #EDECEC;
+    }
+
+    div.header_mid {
+        width          : 11.86rem;
+        margin         : 0 auto;
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+        height         : .9rem;
+
+        div.header_mid_left {
+            img.header_logo {
+                width : 2.38rem;
+                height: .52rem;
+            }
+        }
+
+        div.header_mid_right {
+            display    : flex;
+            align-items: center;
+
+            .listed_company {
+                width       : 2.64rem;
+                height      : .55rem;
+                margin-right: .2rem;
+            }
+
+            div.Hour_Hotline {
+                display       : flex;
+                flex-direction: column;
+
+                span.Hour_Hotline_text {
+
+                    font-size  : .18rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: bold;
+                    color      : #666666;
+                    line-height: .3rem;
+
+                }
+
+                span.Hour_Hotline_phone {
+
+                    font-size  : .22rem;
+                    font-family: Source Han Sans CN;
+                    font-weight: bold;
+                    color      : #1570D9;
+                    line-height: .3rem;
+
+                }
+            }
+
+            .BigGift {
+                height: .78rem;
+                width : 1.14rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    ul.header_nav {
+        display        : flex;
+        align-items    : center;
+        height         : .7rem;
+        justify-content: center;
+        width          : 100%;
+
+        li.header_nav_li {
+            margin-right: .4rem;
+            position    : relative;
+
+            .header_nav_link {
+                font-size  : .18rem;
+                font-family: Source Han Sans CN;
+                font-weight: 400;
+                color      : #222222;
+                line-height: .3rem;
+            }
+
+            .header_nav_link:hover{
+                text-decoration: none !important;
+            }
+            .header_nav_link_active {
+                color      : #1570D9;
+                text-decoration: none !important;
+
+            }
+
+            .navlink_active {
+                width : .62rem;
+                height: .02rem;
+                border: .01rem solid #1F7CE8;
+                margin: 0 auto;
+            }
+
+            .activity_hot {
+                position: absolute;
+                width   : .42rem;
+                height  : .18rem;
+                top     : -0.12rem;
+                left    : .46rem;
+            }
+
+            .quick_quotation {
+                width          : .83rem;
+                height         : .27rem;
+                background     : #1570D9;
+                border-radius  : .14rem;
+                cursor         : pointer;
+                font-size      : .16rem;
+                font-family    : Source Han Sans CN;
+                font-weight    : 400;
+                color          : #FFFFFF;
+                line-height    : .3rem;
+                display        : flex;
+                justify-content: center;
+                align-items    : center;
+
+            }
+
+
+
+        }
+    }
+
+
+}
+
+
+.nav-tabs>li>a{
+    margin-right: 0;
+    border: 0;
+    border-right: 0;
+
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+    background-color: #fff;
+    border: none;
+}
+.dropdown-menu>li>a{
+    padding: .1rem .2rem;
+}
+
+.nav>li>a{
+    padding: 0;
+}
