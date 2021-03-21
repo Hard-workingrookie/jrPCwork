@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react'
+import React, {Component} from 'react'
 import {Carousel, Input} from 'antd'
 import 'swiper/swiper-bundle.min.css'
 import Swiper from 'swiper/swiper-bundle.min.js'
