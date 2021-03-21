@@ -868,7 +868,6 @@ div.decoration_process {
                         justify-content: center;
                         align-items    : center;
                         cursor         : pointer;
-
                         font-size  : .22rem;
                         font-family: Source Han Sans CN;
                         font-weight: bold;
@@ -979,211 +978,216 @@ div.selected_cases_box {
         margin-bottom: .54rem;
     }
 
-
-    div.selected_cases_content {
-        display: flex;
-
-        .selected_cases_content_left {
-            img.selected_cases_content_case {
-                width : 9.26rem;
-                height: 4.83rem;
-                border: .01rem dotted #fff;
-            }
-
-            .case_note_carousel {
-                width     : 4rem;
-                overflow  : hidden;
-                margin-top: .21rem;
-
-                div.case_note_text {
-                    display    : flex !important;
-                    align-items: center !important;
-
-                    img.case_note_laba_icon {
-                        width       : .24rem;
-                        height      : .2rem;
-                        margin-right: .11rem;
-                    }
-
-                    p.case_notes_txt {
-                        font-size  : .2rem;
-                        font-family: Source Han Sans CN;
-                        font-weight: 400;
-                        color      : #FFFFFF;
-                        margin     : 0;
-
-
-                    }
+    .selected_cases_content_Carousel{
+        height: 5.24rem;
+        width: 100%;
+        margin-left: 25%;
+        div.selected_cases_content {
+            display: flex !important;
+    
+            .selected_cases_content_left {
+                img.selected_cases_content_case {
+                    width : 9.26rem;
+                    height: 4.83rem;
+                    border: .01rem dotted #fff;
                 }
-            }
-        }
-
-        div.selected_cases_content_design {
-            display       : flex;
-            flex-direction: column;
-
-            div.case_pagination {
-                display        : flex;
-                justify-content: flex-end;
-                align-items    : center;
-
-                img.case_pagination_left {
-                    width       : .24rem;
-                    height      : .21rem;
-                    margin-right: .2rem;
-                }
-
-                span.case_pagination_nums {
-                    font-size  : .20rem;
-                    font-family: Source Han Sans CN;
-                    font-weight: 400;
-                    color      : #999999;
-                    line-height: .58rem;
-
-                }
-
-                img.case_pagination_right {
-                    width      : .24rem;
-                    height     : .21rem;
-                    margin-left: .2rem;
-                }
-            }
-
-            div.case_design_card {
-                width          : 5.63rem;
-                height         : 4.6rem;
-                border         : .01rem dotted #fff;
-                display        : flex;
-                flex-direction : column;
-                background-size: 100% 100%;
-                color          : #fff;
-                margin-left    : -0.9rem;
-
-                div.case_design_info {
-                    display     : flex;
-                    align-items : center;
-                    margin-top  : .38rem;
-                    padding-left: .44rem;
-
-                    img.case_design_avator {
-                        width        : 1.48rem;
-                        height       : 1.46rem;
-                        border-radius: 50%;
-                    }
-
-                    div.case_design_info_right {
-                        margin-left: .3rem;
-
-                        span.case_design_info_name {
-                            width       : .71rem;
-                            height      : .23rem;
-                            font-size   : .24rem;
-                            font-family : Lantinghei SC;
-                            font-weight : 600;
-                            color       : #FFFFFF;
-                            line-height : .58rem;
-                            margin-right: .23rem;
+    
+                .case_note_carousel {
+                    width     : 4rem;
+                    overflow  : hidden;
+                    margin-top: .21rem;
+    
+                    div.case_note_text {
+                        display    : flex !important;
+                        align-items: center !important;
+    
+                        img.case_note_laba_icon {
+                            width       : .24rem;
+                            height      : .2rem;
+                            margin-right: .11rem;
                         }
-
-                        span.case_design_info_title {
-                            margin-top   : .26rem;
-                            margin-bottom: .16rem;
-                        }
-
-                        p.case_design_info_years {
-                            margin-bottom: .16rem;
-
-                            span {}
-                        }
-
-                        p {}
-
-                        span.design_concept {
-                            font-size  : .18rem;
+    
+                        p.case_notes_txt {
+                            font-size  : .2rem;
                             font-family: Source Han Sans CN;
                             font-weight: 400;
                             color      : #FFFFFF;
-                            line-height: .32rem;
+                            margin     : 0;
+    
+    
                         }
                     }
                 }
-
-                div.case_address_info {
-                    margin-top    : .47rem;
-                    display       : flex;
-                    flex-direction: column;
-                    padding-left  : .55rem;
-
-                    .case_house_name {
-                        font-size    : .24rem;
-                        font-family  : Source Han Sans CN;
-                        font-weight  : 400;
-                        color        : #FFFFFF;
-                        line-height  : .22rem;
-                        margin-bottom: .27rem;
+            }
+    
+            div.selected_cases_content_design {
+                display       : flex;
+                flex-direction: column;
+    
+                div.case_pagination {
+                    display        : flex;
+                    justify-content: flex-end;
+                    align-items    : center;
+    
+                    img.case_pagination_left {
+                        width       : .24rem;
+                        height      : .21rem;
+                        margin-right: .2rem;
                     }
-
-                    .typeInformation {
-                        margin-bottom: .19rem;
-
-                        span {}
+    
+                    span.case_pagination_nums {
+                        font-size  : .20rem;
+                        font-family: Source Han Sans CN;
+                        font-weight: 400;
+                        color      : #999999;
+                        line-height: .58rem;
+    
                     }
-
-                    .customer_rating_box {
-                        display      : flex;
-                        align-items  : center;
-                        margin-bottom: .3rem;
-
-                        img {
-                            width       : .19rem;
-                            height      : .18rem;
-                            margin-right: .03rem;
-                        }
+    
+                    img.case_pagination_right {
+                        width      : .24rem;
+                        height     : .21rem;
+                        margin-left: .2rem;
                     }
                 }
-
-                div.case_design_card_btns {
-                    display     : flex;
-                    align-items : center;
-                    padding-left: .55rem;
-
-                    div.case_design_btn_free {
-                        background-color: #1570D9;
-                        width           : 2.19rem;
-                        height          : .49rem;
-                        font-size       : .22rem;
-                        font-family     : Source Han Sans CN;
-                        font-weight     : 400;
-                        color           : #FFFFFF;
-                        line-height     : .22rem;
-                        margin-right    : .24rem;
-                        display         : flex;
-                        justify-content : center;
-                        align-items     : center;
-                        border-radius   : .3rem;
-                        cursor          : pointer;
+    
+                div.case_design_card {
+                    width          : 5.63rem;
+                    height         : 4.6rem;
+                    border         : .01rem dotted #fff;
+                    display        : flex;
+                    flex-direction : column;
+                    background-size: 100% 100%;
+                    color          : #fff;
+                    margin-left    : -0.9rem;
+    
+                    div.case_design_info {
+                        display     : flex;
+                        align-items : center;
+                        margin-top  : .38rem;
+                        padding-left: .44rem;
+    
+                        img.case_design_avator {
+                            width        : 1.48rem;
+                            height       : 1.46rem;
+                            border-radius: 50%;
+                        }
+    
+                        div.case_design_info_right {
+                            margin-left: .3rem;
+    
+                            span.case_design_info_name {
+                                width       : .71rem;
+                                height      : .23rem;
+                                font-size   : .24rem;
+                                font-family : Lantinghei SC;
+                                font-weight : 600;
+                                color       : #FFFFFF;
+                                line-height : .58rem;
+                                margin-right: .23rem;
+                            }
+    
+                            span.case_design_info_title {
+                                margin-top   : .26rem;
+                                margin-bottom: .16rem;
+                            }
+    
+                            p.case_design_info_years {
+                                margin-bottom: .16rem;
+    
+                                span {}
+                            }
+    
+                            p {}
+    
+                            span.design_concept {
+                                font-size  : .18rem;
+                                font-family: Source Han Sans CN;
+                                font-weight: 400;
+                                color      : #FFFFFF;
+                                line-height: .32rem;
+                            }
+                        }
                     }
-
-                    div.case_design_btn_now {
-                        border         : .01rem solid #F4F4F4;
-                        cursor         : pointer;
-                        width          : 2.19rem;
-                        height         : .49rem;
-                        font-size      : .22rem;
-                        font-family    : Source Han Sans CN;
-                        font-weight    : 400;
-                        color          : #FFFFFF;
-                        line-height    : .22rem;
-                        display        : flex;
-                        justify-content: center;
-                        border-radius  : .3rem;
-                        align-items    : center;
+    
+                    div.case_address_info {
+                        margin-top    : .47rem;
+                        display       : flex;
+                        flex-direction: column;
+                        padding-left  : .55rem;
+    
+                        .case_house_name {
+                            font-size    : .24rem;
+                            font-family  : Source Han Sans CN;
+                            font-weight  : 400;
+                            color        : #FFFFFF;
+                            line-height  : .22rem;
+                            margin-bottom: .27rem;
+                        }
+    
+                        .typeInformation {
+                            margin-bottom: .19rem;
+    
+                            span {}
+                        }
+    
+                        .customer_rating_box {
+                            display      : flex;
+                            align-items  : center;
+                            margin-bottom: .3rem;
+    
+                            img {
+                                width       : .19rem;
+                                height      : .18rem;
+                                margin-right: .03rem;
+                            }
+                        }
+                    }
+    
+                    div.case_design_card_btns {
+                        display     : flex;
+                        align-items : center;
+                        padding-left: .55rem;
+    
+                        div.case_design_btn_free {
+                            background-color: #1570D9;
+                            width           : 2.19rem;
+                            height          : .49rem;
+                            font-size       : .22rem;
+                            font-family     : Source Han Sans CN;
+                            font-weight     : 400;
+                            color           : #FFFFFF;
+                            line-height     : .22rem;
+                            margin-right    : .24rem;
+                            display         : flex;
+                            justify-content : center;
+                            align-items     : center;
+                            border-radius   : .3rem;
+                            cursor          : pointer;
+                        }
+    
+                        div.case_design_btn_now {
+                            border         : .01rem solid #F4F4F4;
+                            cursor         : pointer;
+                            width          : 2.19rem;
+                            height         : .49rem;
+                            font-size      : .22rem;
+                            font-family    : Source Han Sans CN;
+                            font-weight    : 400;
+                            color          : #FFFFFF;
+                            line-height    : .22rem;
+                            display        : flex;
+                            justify-content: center;
+                            border-radius  : .3rem;
+                            align-items    : center;
+                        }
                     }
                 }
             }
         }
+    
     }
-
+ 
 
 
     ul.selected_cases_tags {

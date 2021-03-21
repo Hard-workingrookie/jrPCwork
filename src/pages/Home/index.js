@@ -71,6 +71,8 @@ import {
 import {Bottom} from '../../components/side/bottom/bottom'
 import {Rightred} from '../../components/side/right/right'
 import Dialog from '../../components/Dialog/index'
+import 'swiper/swiper-bundle.min.css'
+import Swiper from 'swiper/swiper-bundle.min.js'
 
 const {CheckableTag} = Tag
 const tagsData = [
@@ -190,8 +192,22 @@ export default class Home extends Component {
       {id: 4, title: '# 装修问答 #', subtitle: '装修价格', img: knowledge4}
     ],
     planVisible: false,
-    designerVisible:false,
-    siteType:1
+    designerVisible: false,
+    siteType: 1
+  }
+
+  componentDidMount() {
+    var swiper = new Swiper('.selected_cases_content_Carousel', {
+      speed: 500,
+      spaceBetween: 10,
+      freeMode: true, 
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+      navigation: {
+        nextEl: '.case_pagination_right',
+        prevEl: '.case_pagination_left'
+      }
+    })
   }
 
   callback(key) {
@@ -208,9 +224,7 @@ export default class Home extends Component {
   }
 
   planSaveInfo() {}
-  designerSaveInfo(){
-
-  }
+  designerSaveInfo() {}
 
   RenderBanner() {
     return (
@@ -453,7 +467,7 @@ export default class Home extends Component {
 
   //工地直播
   RenderFloor7() {
-    const {scrollingText,siteType} = this.state
+    const {scrollingText, siteType} = this.state
     return (
       <div className='site_live_floor'>
         {this.RenderTitle(
@@ -507,8 +521,30 @@ export default class Home extends Component {
             >
               <p>温馨提示： 为保障客服第一时间与您取得联系，请正确填写信息</p>
               <div className='site_live_right_Btns'>
-                <div className='visit_construction_site' style={{background:siteType===1?'#3E3E3E':'#FFFFFF',color:siteType===1?'#FFFFFF':'#222222'}} onClick={()=>{this.setState({siteType:1})}}>参观我家附近工地</div>
-                <div className='get_community_benefits' style={{background:siteType===2?'#3E3E3E':'#FFFFFF',color:siteType===2?'#FFFFFF':'#222222'}} onClick={()=>{this.setState({siteType:2})}}>获取小区专属优惠</div>
+                <div
+                  className='visit_construction_site'
+                  style={{
+                    background: siteType === 1 ? '#3E3E3E' : '#FFFFFF',
+                    color: siteType === 1 ? '#FFFFFF' : '#222222'
+                  }}
+                  onClick={() => {
+                    this.setState({siteType: 1})
+                  }}
+                >
+                  参观我家附近工地
+                </div>
+                <div
+                  className='get_community_benefits'
+                  style={{
+                    background: siteType === 2 ? '#3E3E3E' : '#FFFFFF',
+                    color: siteType === 2 ? '#FFFFFF' : '#222222'
+                  }}
+                  onClick={() => {
+                    this.setState({siteType: 2})
+                  }}
+                >
+                  获取小区专属优惠
+                </div>
               </div>
               <div className='site_live_froms'>
                 <Input
@@ -529,7 +565,7 @@ export default class Home extends Component {
                 <span style={{color: '#F9050A'}}>400-686-1997</span>{' '}
               </span>
               <div className='One_click_appointment'>
-              {siteType==1?'一键预约参观工地':'一键获取小区优惠'}
+                {siteType == 1 ? '一键预约参观工地' : '一键获取小区优惠'}
               </div>
             </div>
 
@@ -548,6 +584,7 @@ export default class Home extends Component {
   //精选案例邀您品鉴
   RenderFloor8() {
     const {scrollingText, selectedTags} = this.state
+    let data = [1, 2, 3]
     return (
       <div>
         <div
@@ -560,107 +597,130 @@ export default class Home extends Component {
             10余种潮流家装风格，数万套精品案例作品，设计师精心打造，让您快速找到家装灵感！
             ——
           </p>
-          <div className='selected_cases_content'>
-            <div className='selected_cases_content_left'>
-              <img src={caseImg} className='selected_cases_content_case' />
 
-              <Carousel
-                dotPosition='left'
-                autoplay
-                dots={false}
-                className='case_note_carousel'
-              >
-                {scrollingText.map((item) => {
-                  return (
-                    <div className='case_note_text' key={item}>
+          <div className='selected_cases_content_Carousel swiper-container'>
+          <div className='swiper-wrapper'>
+            {data.map((list, index, arr) => {
+              return (
+                <div className='selected_cases_content swiper-slide' key={list}>
+                  <div className='selected_cases_content_left'>
+                    <img
+                      src={caseImg}
+                      className='selected_cases_content_case'
+                    />
+                    <Carousel
+                      dotPosition='left'
+                      autoplay
+                      dots={false}
+                      className='case_note_carousel'
+                    >
+                      {scrollingText.map((item) => {
+                        return (
+                          <div className='case_note_text' key={item}>
+                            <img
+                              className='case_note_laba_icon'
+                              src={xiaolaba}
+                              alt=''
+                            />
+                            <p className='case_notes_txt'>
+                              北京金隅汇景苑一区xx业主 送来了锦旗
+                            </p>
+                          </div>
+                        )
+                      })}
+                    </Carousel>
+                  </div>
+
+                  <div className='selected_cases_content_design'>
+                    {/*分页*/}
+                    <div className='case_pagination'>
                       <img
-                        className='case_note_laba_icon'
-                        src={xiaolaba}
+                        className='case_pagination_left'
+                        src={jiantouleft}
                         alt=''
                       />
-                      <p className='case_notes_txt'>
-                        北京金隅汇景苑一区xx业主 送来了锦旗
-                      </p>
+                      <span className='case_pagination_nums'>
+                        <span style={{color: '#fff', fontSize: '.26rem'}}>
+                          {index + 1}
+                        </span>
+                        /{arr.length}
+                      </span>
+                      <img
+                        className='case_pagination_right'
+                        src={jiantouright}
+                        alt=''
+                      />
                     </div>
-                  )
-                })}
-              </Carousel>
-            </div>
-
-            <div className='selected_cases_content_design'>
-              {/*分页*/}
-              <div className='case_pagination'>
-                <img
-                  className='case_pagination_left'
-                  src={jiantouleft}
-                  alt=''
-                />
-                <span className='case_pagination_nums'>
-                  <span style={{color: '#fff', fontSize: '.26rem'}}>1</span>
-                  /2000
-                </span>
-                <img
-                  className='case_pagination_right'
-                  src={jiantouright}
-                  alt=''
-                />
-              </div>
-              {/*设计师卡片*/}
-              <div
-                className='case_design_card'
-                style={{backgroundImage: 'url(' + designBg + ')'}}
-              >
-                <div className='case_design_info'>
-                  <img className='case_design_avator' src={caseImg} alt='' />
-                  <div className='case_design_info_right'>
-                    <span className='case_design_info_name'>郑一君</span>
-                    <span
-                      className='case_design_info_title'
-                      style={{color: '#EDA721'}}
+                    {/*设计师卡片*/}
+                    <div
+                      className='case_design_card'
+                      style={{backgroundImage: 'url(' + designBg + ')'}}
                     >
-                      高级主任设计师
-                    </span>
-                    <p className='case_design_info_years'>
-                      从业：<span style={{color: '#EDA721'}}>16年 </span> 作品：
-                      <span style={{color: '#EDA721'}}>20套</span>
-                    </p>
-                    <p className=''>设计理念： </p>
-                    <span className='design_concept'>
-                      用专业的设计语言打造最舒适的居住环境
-                    </span>
+                      <div className='case_design_info'>
+                        <img
+                          className='case_design_avator'
+                          src={caseImg}
+                          alt=''
+                        />
+                        <div className='case_design_info_right'>
+                          <span className='case_design_info_name'>郑一君</span>
+                          <span
+                            className='case_design_info_title'
+                            style={{color: '#EDA721'}}
+                          >
+                            高级主任设计师
+                          </span>
+                          <p className='case_design_info_years'>
+                            从业：
+                            <span style={{color: '#EDA721'}}>16年 </span> 作品：
+                            <span style={{color: '#EDA721'}}>20套</span>
+                          </p>
+                          <p className=''>设计理念： </p>
+                          <span className='design_concept'>
+                            用专业的设计语言打造最舒适的居住环境
+                          </span>
+                        </div>
+                      </div>
+                      <div className='case_address_info'>
+                        <span className='case_house_name'>
+                          碧水庄园李先生府邸
+                        </span>
+                        <p className='typeInformation'>
+                          <span>本案户型：独栋别墅</span>
+                          <span>户型面积：320m²</span>
+                        </p>
+                        <div className='customer_rating_box'>
+                          <span>设计风格：现代轻奢</span>
+                          <span>客户评分：</span>
+                          <img className='customer_rating' src={xin} alt='' />
+                          <img className='customer_rating' src={xin} alt='' />
+                          <img className='customer_rating' src={xin} alt='' />
+                          <img className='customer_rating' src={xin} alt='' />
+                        </div>
+                      </div>
+                      <div className='case_design_card_btns'>
+                        <div
+                          className='case_design_btn_free'
+                          onClick={() => {
+                            this.setState({planVisible: true})
+                          }}
+                        >
+                          免费定制设计方案
+                        </div>
+                        <div
+                          className='case_design_btn_now'
+                          onClick={() => {
+                            this.setState({designerVisible: true})
+                          }}
+                        >
+                          立即预约设计师
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className='case_address_info'>
-                  <span className='case_house_name'>碧水庄园李先生府邸</span>
-                  <p className='typeInformation'>
-                    <span>本案户型：独栋别墅</span>
-                    <span>户型面积：320m²</span>
-                  </p>
-                  <div className='customer_rating_box'>
-                    <span>设计风格：现代轻奢</span>
-                    <span>客户评分：</span>
-                    <img className='customer_rating' src={xin} alt='' />
-                    <img className='customer_rating' src={xin} alt='' />
-                    <img className='customer_rating' src={xin} alt='' />
-                    <img className='customer_rating' src={xin} alt='' />
-                  </div>
-                </div>
-                <div className='case_design_card_btns'>
-                  <div className='case_design_btn_free'
-                  onClick={() => {
-                    this.setState({planVisible: true})
-                  }}
-                  >免费定制设计方案</div>
-                  <div
-                    className='case_design_btn_now'
-                    onClick={() => {
-                      this.setState({designerVisible: true})
-                    }}
-                  >
-                    立即预约设计师
-                  </div>
-                </div>
-              </div>
+              )
+            })}
             </div>
           </div>
 
@@ -767,9 +827,14 @@ export default class Home extends Component {
           })}
         </Carousel>
         <div className='getProgramme_evaluate'>
-          <img className='getProgramme_btn'  onClick={() => {
-            this.setState({designerVisible: true})
-          }} src={getProgramme} alt='' />
+          <img
+            className='getProgramme_btn'
+            onClick={() => {
+              this.setState({designerVisible: true})
+            }}
+            src={getProgramme}
+            alt=''
+          />
           <div className='getEvaluate_btn'>查看更多评价</div>
         </div>
       </div>
@@ -912,19 +977,19 @@ export default class Home extends Component {
         {this.RenderBottom()}
         {this.RenderRight()}
         <Dialog
-        type='plan'
-        visible={planVisible}
-        cancelClick={() => this.setState({planVisible: false})}
-        btnTxt={['立即获取方案']}
-        saveInfo={this.planSaveInfo.bind(this)}
-      />
-      <Dialog
-        type='designer'
-        visible={designerVisible}
-        cancelClick={() => this.setState({designerVisible: false})}
-        btnTxt={['立即获取方案']}
-        saveInfo={this.designerSaveInfo.bind(this)}
-      />
+          type='plan'
+          visible={planVisible}
+          cancelClick={() => this.setState({planVisible: false})}
+          btnTxt={['立即获取方案']}
+          saveInfo={this.planSaveInfo.bind(this)}
+        />
+        <Dialog
+          type='designer'
+          visible={designerVisible}
+          cancelClick={() => this.setState({designerVisible: false})}
+          btnTxt={['立即获取方案']}
+          saveInfo={this.designerSaveInfo.bind(this)}
+        />
       </div>
     )
   }
